@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{margin: 0 ; padding: 0; font-family: 'Montserrat', sans-serif;box-sizing: border-box}
+
+body{font-size: 100%;}
+
+h1{font-size: clamp( 1.2rem, 3.8vw, 4vh)}
+h3{font-size:clamp( 1rem, 1.6vw, 3vh);}
+h4{font-size:clamp( 1rem, 2vw, 3vh)}
+p{font-size: clamp( .8rem, 2vw, 2.8vh);}
+
+.display, .bx{display:flex;justify-content: center;align-items: center;}
+
+.p1{padding: 5em 2em;}
+.p1-box{align-items: center}
+.p1-item{width: 50%;margin: 1em;}
+.form-bx{background-color: #31FF87;padding: 5em;}
+.p1 h1{margin-bottom: 1em;}
+
+.p2{background-color: #EBEBEB;padding: 5em 2em;}
+.p2-box{text-align: center;}
+.p2 h1{margin:0 0 1em ;}
+
+.p3{padding: 1em 1em 2em;flex-direction: column;}
+.p3 h1{padding: 1em;}
+.p3-box{align-items: flex-start;flex-wrap: wrap;padding: 1em 0;}
+.p3-item{width: 30%;margin: .5em;text-align: center;}
+.p3-item img{width: 10%;height: auto;}
+.p3 a{text-decoration: none;padding: 1em 2em;background-color: #31FF87;color: #000;font-weight: 700;border-radius: .5em;}
+
+.p13{padding: 2em 0;background-color: #EBEBEB;}
+.p13 h1 {padding: 0;text-align: center;color: #000;}
+.p13-accordion{display: flex;justify-content: center;align-items: center;padding: 2em;}
+.accordion{max-width: 90%;display: block;margin: 0 auto;}
+.accordion .contentBx{position: relative;margin: .5em 1em;}
+.accordion .contentBx .label{position: relative;padding: 1em;
+  background: #fff;color: #000;cursor: pointer;font-weight: 700;border-radius: .5em;
+  font-size: clamp(.8rem, 1.2vw, 1.2vh);margin: 0em 0;}
+.accordion .contentBx .label::before{content: '+';position: relative;top:50%;
+    font-size: 1rem;} 
+
+.accordion .contentBx.active .label::before{content: '-';}
+.accordion .contentBx .content{position: relative;background: #fff;
+    height: 0;overflow: hidden;transition: 0.5s;overflow: auto;color: #000;border-radius: .5em;
+    font-size: clamp(.8rem, 1.2vw, 1.2vh);margin: 0em 0;}
+.accordion .contentBx.active .content{height: 150px;padding: 1em;}
+
+.p5-item{text-align: center;}
+
+footer p{font-size: .7rem;padding: 1vh 0;margin: 0 3vw;}
+.alert p{display: block;width: 80%;margin: 0 auto;text-align: center;font-size: .5rem;}
+footer p a{color:#31FF87; text-decoration: none;}
+.f-i{display: flex;justify-content: space-between;}
+@media screen and (max-width:900px){
+    .bx{flex-direction: column;}
+
+    .p3-item, .p1-item{width: 90%;}
+}
